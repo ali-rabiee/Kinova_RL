@@ -73,7 +73,7 @@ This ROS package implements a shared control Deep Reinforcement Learning (DRL) s
 ## Customization
 
 - Modify the action space in `action_executor.py` to change the robot's movement patterns.
-- Adjust the DQN architecture in `DQN_net.py` (not provided in the given files, but assumed to exist).
+- Adjust the DQN architecture in `DQN_net.py` 
 
 
 ## Acknowledgements
