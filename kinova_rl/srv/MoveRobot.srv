@@ -1,6 +1,0 @@
-float32[6] pose_value
-string unit
-bool relative
----
-bool success
-string message
