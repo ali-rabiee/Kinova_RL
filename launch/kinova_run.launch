@@ -1,0 +1,25 @@
+<launch>
+    <!-- Initialize the flags -->
+    <node name="init_flags" pkg="kinova_rl" type="init_flags.py" output="screen" />
+
+    <!-- Include Kinova Robot Launch File -->
+    <include file="$(find kinova_bringup)/launch/kinova_robot.launch"/>
+
+    <!-- Move Robot Server Node -->
+    <node name="move_robot_server" pkg="kinova_rl" type="move_robot_server.py" output="screen" />
+
+    <!-- Move Finger Server -->
+    <node name="move_finger_server" pkg="kinova_rl" type="move_finger_server.py" output="screen" />
+
+    <!-- Head Position Node -->
+    <node name="head_position" pkg="kinova_rl" type="head_position_publisher.py" output="screen" />
+
+    <!-- RL Agent Node -->
+    <node name="rl_agent" pkg="kinova_rl" type="rl_agent2.py" output="screen" />
+
+    <!-- Action Executor Node -->
+    <node name="action_executor" pkg="kinova_rl" type="action_executor.py" output="screen" />
+
+    <!-- Kill Node -->
+    <node name="kill_node" pkg="kinova_rl" type="kill_node.py" output="screen" />
+</launch>
