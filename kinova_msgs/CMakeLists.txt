@@ -23,6 +23,7 @@ add_message_files(
   PoseVelocityWithFingers.msg
   PoseVelocityWithFingerVelocity.msg
   CartesianForce.msg
+  Action.msg
 )
 
 add_service_files(
